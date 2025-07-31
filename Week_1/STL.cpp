@@ -130,4 +130,75 @@ int main()
 
     cout << "front " << d.front() << endl; // Accessing the first element
     cout << "back " << d.back() << endl;   // Accessing the last element
+
+    cout << "Empty or not -> " << d.empty() << endl; // Checking if the deque is empty
+
+    d.erase(d.begin(), d.begin() + 1); // Erasing the first element
+    cout << "After erase operation: ";
+    for (int i : d)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+}
+
+//===================================================
+
+// doubly linked list inclusion using STL
+//  it is a linear data structure
+
+#include <iostream>
+#include <list>
+
+using namespace std;
+int main()
+{
+    list<int> l;
+
+    list<int> a(5, 1); // Initializing a list with 5 elements, all set to 1
+    l.push_back(1);    // Inserting at the back
+    l.push_front(2);   // Inserting at the front
+
+    for (int i : l)
+    {
+        cout << i << " ";
+    }
+
+    cout << endl;
+    l.erase(l.begin()); // Erasing the first element
+    cout << "After erase operation: ";
+    for (int i : l)
+    {
+        cout << i << " ";
+    }
+
+    cout << "size of list -> " << l.size() << endl; // Output: 1
+}
+
+//===================================================
+
+// stack inclusion using STL
+// it is a LIFO data structure (Last In First Out)
+
+#include <iostream>
+#include <stack>
+using namespace std;
+int main()
+{
+    stack<string> s;
+
+    s.push("Dhrub");
+    s.push("Rohit");
+    s.push("Rohit2");
+
+    cout << "Top element: " << s.top() << endl; // Output: Rohit2
+
+    s.pop();                                              // Removes the top element
+    cout << "Top element after pop: " << s.top() << endl; // Output : Rohit
+
+    cout << "Size of stack: " << s.size() << endl; // Output: 2
+
+    // cout << "Is stack empty? " << (s.empty() ? "Yes" : "No") << endl; // Output: No
+
+    cout << "Is stack empty? " << s.empty() << endl; // Output: No
 }
