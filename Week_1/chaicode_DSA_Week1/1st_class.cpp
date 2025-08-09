@@ -20,7 +20,14 @@ int main()
     else
     {
     }
-}
+} // here max comparisions will be just two
 
 // or run a for loop
+// for (int i = 1; i <= 9; i++)
+// {
+//     if (ball[i] > wt)
+//     {
+//         wt = ball[i]
+//     }
+// } // here we will do 8 comparision cuz there are 9 elements
 // but time complexity will determine that 1st method is faster not the for loop where iterate each element
