@@ -31,3 +31,7 @@ int main()
 //     }
 // } // here we will do 8 comparision cuz there are 9 elements
 // but time complexity will determine that 1st method is faster not the for loop where iterate each element
+
+// for best case - notation is (omega notation)
+// for average notation is (Theta notation)
+// for worst case notation is (Big-O notation)
