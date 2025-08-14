@@ -21,3 +21,20 @@
 // bi-quadratic equation - ax^4 + bx^3 + cx^2 + dx + e
 // log equations - alogx + b
 // exponential equation - e^x + 2^3 + 3^x
+
+// time complexity nikaal ne ke liye hum ek program lenge
+// aur uski equation banayege by seeing it's input and output value and plotting a equation and then tell it's complexity
+
+// for ex-
+// linear equation
+// f(n) = 3n + 5
+// f(1) = 3(1) + 5
+// f(2) = 3(2) + 5
+//.
+//.
+//.
+// f(100) = 300 + 5 = 305
+// f(1000) = 3000 + 5 = 3005
+
+// if n is very large then in an+b
+// a & b becomes negligible in that case
