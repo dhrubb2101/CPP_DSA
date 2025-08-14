@@ -38,3 +38,36 @@
 
 // if n is very large then in an+b
 // a & b becomes negligible in that case
+
+//=====================================
+
+// now let's come to quadratic equation
+
+// quadratic equation : f(n) = 2n^2 + 3n - 5
+// if we take very high value of n
+// we'll focus on just n^2 as it is the dominating one
+// we'll ignore the rest
+// for worst case n^2 will be the answer as it is the most dominating one it is the worst one
+// n will take less time
+
+//=================================================
+
+// cubic equation :an^3 + bn^2 + cn + d
+// if we take a very large value of n
+// n^3 will be the dominating and rest will be negligible and so ignore them
+
+//====================================
+// 1. it is the best time complexity
+// constant time complexity - independent of input size
+// we denote it with 1
+// constant time complexity , that is irrespective of input size time complexity remains constant
+
+//============================================
+// then at 2nd number comoes logarithmic complexity
+// logarithmic complexity
+// here our work always gets divided
+// like for ex n gets divided into n/2 and n/2 and then each n/2 into n/4 and n/4
+// like binary search
+// logn is better than n time complexity as logn is smaller than n
+
+//===============================================
