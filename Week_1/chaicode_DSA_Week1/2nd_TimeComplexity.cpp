@@ -85,3 +85,6 @@
 //==========================================
 // then at 6th comes exponential time complexity
 // for ex 2^n,3^n, e^n, a^n
+// it grows exponentially
+//
+//================================================
