@@ -71,3 +71,17 @@
 // logn is better than n time complexity as logn is smaller than n
 
 //===============================================
+// then at third comes linear time complexity that is n
+
+//====================================
+// then at 4th
+// linear logarithmic complexity - nlogn
+// it'll be more than n (time complexity)
+
+//==========================================
+// then at 5th comes quadratic
+// n^2 is the time complexity more than nlogn
+
+//==========================================
+// then at 6th comes exponential time complexity
+// for ex 2^n,3^n, e^n, a^n
