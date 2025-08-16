@@ -88,3 +88,14 @@
 // it grows exponentially
 //
 //================================================
+// Assume each operation takes 1 second
+// int main(){
+//     int x,y,z; //-> 3seconds
+//     cin>>x>>y; //-> 2 seconds
+//     z=x+y; //-> 1 second
+//     cout<<z;    //-> 1 second
+//     return 0;   //-> 1 second
+//     // total time = 3 + 2 + 1 + 1 + 1 = 8 seconds
+//     // this is constant time complexity as it is independent of input size
+//     // so time complexity is O(1)
+// }
