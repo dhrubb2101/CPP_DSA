@@ -99,3 +99,24 @@
 //     // this is constant time complexity as it is independent of input size
 //     // so time complexity is O(1)
 // }
+//================================================
+
+// always tell the worst case time complexity first
+//=================================================
+
+// int main(){
+//     int a,b,c,d,e,f; //-> 6 seconds
+//     a = b + c + d;   //3 seconds
+//     f = 2 * a - c* d; //-> 4 seconds
+//     cout << a << b << c; //-> 3 seconds
+//     return 0;   //-> 1 second
+//     // total time = 6 + 3 + 4 + 3 + 1 = 17 seconds
+//     // so time complexity is O(1) as it is independent of input size
+// }
+
+//=================================================
+
+// linear time complexity
+int main()
+{
+}
