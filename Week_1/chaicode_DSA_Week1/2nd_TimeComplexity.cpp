@@ -114,6 +114,7 @@
 //     // so time complexity is O(1) as it is independent of input size
 // }
 
+// always by default tell the worst case scenario
 //=================================================
 
 // linear time complexity
