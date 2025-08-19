@@ -118,6 +118,18 @@
 //=================================================
 
 // linear time complexity
-int main()
-{
-}
+// int main()
+// {
+//     int a, b, c, d, n; //-> 5 seconds
+//     a + b + c;      //-> 2 seconds
+//     cin >> n;       //-> 1 seconds
+//     for (int i = 0; i < n; i++)
+//      //2*n + 1 seconds (how one time where the assignment operator comes into picture)
+//      // n-1 times the loop runs and both comparision and incremental operators works n times so 2*n
+//      //that's how we get 2*n + 1
+//     {
+//         a++; ///n seconds
+//     }
+//     return 0; // 1 seconds
+
+// }
