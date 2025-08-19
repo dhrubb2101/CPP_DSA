@@ -133,3 +133,14 @@
 //     return 0; // 1 seconds
 
 // }
+
+// so total time taken = 5 + 2 + 1 + (2*n + 1) + n + 1 = 3*n + 10
+
+// so to calculate time complexity for loop once again
+// we see that firstly
+// for( int i= 0; i < n ; i++){
+//     a++
+// }
+// 1 sec goes for the assignment operator int i = 0 which works in ithe starting itself for one time
+// 2*n comes from the loop runs from 0 to n-1 times that is n times and each time both comparision and equality operators run n times (hence 2 * n )
+// hence for loop the time complexity is 2*n - 1 times
