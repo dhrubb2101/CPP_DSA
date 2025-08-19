@@ -144,3 +144,22 @@
 // 1 sec goes for the assignment operator int i = 0 which works in ithe starting itself for one time
 // 2*n comes from the loop runs from 0 to n-1 times that is n times and each time both comparision and equality operators run n times (hence 2 * n )
 // hence for loop the time complexity is 2*n - 1 times
+
+// so for this challenge lline 123
+// the linear equation becomes 3*n + 10  and in linear equation we can remove the items idded
+
+// in linear equation we add , subtract, multiply and divide constants, like 3*n + 10 becomes O(n) time complexity
+
+//===============================================================================================================================================================
+
+// challenge three for time complexity
+// int main()
+// {
+//     int a, b, c, n a = b + c;       //-> 2 seconds
+//     for (int i = 0; i < n / 2; i++) //-> O(n/2) = O(n)
+//     {
+//         a++; //-> n times it will run
+//     }
+//     return 0; // -> output
+// }
+// so final time complexity is O(1) + O(n) + O(n) + O(1) = O(n)
