@@ -207,3 +207,22 @@
 // and afterward see the comparision operator (i < n)
 
 //======================================================
+// // Another challenge
+// int main()
+// {
+//     int a, b, c; // O(1)
+//     a = b + c;   // O(1)
+//     for (int i = 1; i < n / 3; i++)
+//     { // O(n/3) -> O(n)
+//         for (int j = 1; j < n; j = j + 2)
+//         {        // O(n/2) -> O(n)
+//             a++; // n/3 * n/2 times = n^2/6 times - n^2 times
+//         }
+//     }
+//     return 0; // O(1)
+// }
+
+// O(n^2)
+
+// Total time complexity is O(n^2)
+// total time complexity = 1 + 1 + n^2/6 + 1  = O(n^2)
