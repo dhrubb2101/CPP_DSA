@@ -214,8 +214,9 @@
 //     a = b + c;   // O(1)
 //     for (int i = 1; i < n / 3; i++)
 //     { // O(n/3) -> O(n)
-//         for (int j = 1; j < n; j = j + 2)
-//         {        // O(n/2) -> O(n)
+//         for (int j = 1; j < n; j = j + 2) // n/3 * n/2 times -> O(n/2) -> O(n)
+
+//         {
 //             a++; // n/3 * n/2 times = n^2/6 times - n^2 times
 //         }
 //     }
@@ -226,3 +227,17 @@
 
 // Total time complexity is O(n^2)
 // total time complexity = 1 + 1 + n^2/6 + 1  = O(n^2)
+
+//======================================================
+// Cubic time complexity
+// for (i = 0; i < n / 3; i++)
+// { // -> n/3 times
+//     for (j = 0; j < n / 4; j++)
+//     { // -> n/3 * n/4 times
+//         for (k = 0; k < n; k++)
+//         {        // -> n/3 * n/4 * n times = n^3/12
+//             a++; // -> n/3 * n/4 * n times = n^3/12
+//         }
+//     }
+// }
+// thus time complexity will be O(n^3)
