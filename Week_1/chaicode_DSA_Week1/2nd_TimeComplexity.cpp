@@ -309,3 +309,16 @@
 // }
 
 //===================================================
+
+// Another challenge
+
+// for (int i = 0; i < n; i = i + 3)
+// { // time complexity is n/3
+//     for (int j = 1; j < n; j = j * 4)
+//     {                                      // time complexity is log4(n)
+//         for (int k = n; k >= 1; k = k / 3) // time complexity is log3(n)
+//             a++;                           // time complexity is n(logn)^2
+//     }
+// }
+
+// so total time complexity is O[n(logn)^2]
