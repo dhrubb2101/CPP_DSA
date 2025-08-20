@@ -269,4 +269,43 @@
 // klog2 = logn
 // k = log2(n)
 
+// k remains constant (as loop grows exponentially the time taken by the loop decreases to logn)
 // hence that's how we get the time complexity as O(log n)
+//=================================================
+// Another challenge for logarithmic time complexity
+// for (i = n; i < n; i = i * 3)
+// {        // it will run k times
+//     a++; //
+// }
+// i = 1, 3^1, 3^2, 3^3, ......, (3^k=n)
+// k = log3(n) and constant can be removed
+// so time complexity is O(log n)
+
+//============================================================
+
+// Another challenge
+
+// for (i = n; i >= 1; i = i / 2)
+// {
+//     a = b + c;
+// }
+// the loop will start from n
+// so i = n, n/2 , n/4, n/8 , n/16, n/32,..........,
+//  = n/2^0, n/2^1, n/2^2, n/2^3, n/2^4, n/2^5,......,(n/2^k=1)
+//  so n/2^k = 1
+//  taking log on both sides
+//  log(n/2^k) = log(1)
+//  log(n) - k*log(2) = 0
+//  k = log(n)
+
+//===================================================
+// Another Challenge (nlogn)
+// for (i = 0; i < n; i++) // time complexity is n/2
+// {
+//     for (j = 1; j < n; j = j * 3) // time complexity is log3(n)
+//     {
+//         a++; //so total time complexity is nlog(n)
+//     }
+// }
+
+//===================================================
