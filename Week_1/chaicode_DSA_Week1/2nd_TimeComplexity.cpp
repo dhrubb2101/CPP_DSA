@@ -241,3 +241,32 @@
 //     }
 // }
 // thus time complexity will be O(n^3)
+
+//==============================================
+
+// Logarithmic Time complexity
+
+// int main(){
+//     int a,b,c;
+//     a = b + c;
+//     for(int i = 1; i < n; i = i * 2) //output - 2^0, 2^1, 2^2, 2^3, .....2^k (say this loop runs k times)
+//     {
+//         b++;
+//     }
+//     return 0;
+// }
+
+// so here basically we need to understand
+// 1-2^0
+// 2-2^1
+// 4-2^2
+// 8-2^3
+// 16-2^4
+// 32-2^5
+// n-2^k
+// so here 2^k = n (and 2^k represents i that is 2^k = i)
+// so taking log on both sides
+// klog2 = logn
+// k = log2(n)
+
+// hence that's how we get the time complexity as O(log n)
