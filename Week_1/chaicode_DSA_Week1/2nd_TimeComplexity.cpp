@@ -180,3 +180,30 @@
 // overall time complexity is O(n) as n is the most dominating factor
 
 //================================================================================================================================================================
+
+// Quadratic Time : -
+
+// int main()
+// {
+//     int a, b, c;                // O(1)
+//     for (int i = 0; i < n; i++) // code will run n times
+//     {
+//         for (int j = 0; j < n; j++) // code will run n*n times
+//         // n+n+n+.....+n = n^2
+//             a = b + c; // this will also run n^2 times
+//         }
+//     }
+//     cout << a; // O(1)
+
+//     return 0; // O(1)
+// here the most dominating is O(n^2), so time complexity is O(n^2)
+
+// first int i=0 runs , then condition gets checked (I < N) amd
+// then it comes inside the inside loop int j = 0 runs , then condition gets checked (j < n)
+//  then it comes inside the inner loop and runs the code a = b + c
+// and jb andar waale loop ki body khatam ho jayegi toh increment operation pr jayenge
+// and jb bahar waale loop ki body khatam ho jayegi toh increment operation pr jayenge (j++)
+// and then it will check condition (j < n) if it is fulfilled it will go to outside loop's condition (i++) , if it not it will run until inner loop condition is satisified
+// and afterward see the comparision operator (i < n)
+
+//======================================================
