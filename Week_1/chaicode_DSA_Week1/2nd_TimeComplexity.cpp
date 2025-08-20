@@ -322,3 +322,21 @@
 // }
 
 // so total time complexity is O[n(logn)^2]
+
+//======================================================
+
+// Another challenge
+
+// for(i = 0; i < n; i++) // time complexity is n
+// {
+//     a = b + c;
+// }
+// for(j = 0; j < n; j++){ // time complexity is n
+//     for(k = 0; k < n; k = k+2){ // time complexity is n*n
+//         for(l = 0; l < n; l = l * 2){ // time complexity is log2(n)
+//             a++; // time complexity is n*n*log2(n)
+//         }
+//     }
+// }
+
+// total time complexity is n^2(log n)
