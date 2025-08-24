@@ -340,3 +340,26 @@
 // }
 
 // total time complexity is n^2(log n)
+
+//======================================================
+
+// Final Challenge for time complexity guessing
+
+// for (i = 0; i < n; i++)
+// {
+//     for (j = 0; j < n; j++)
+//     {
+//         a++; // time complexity is O(n^2)
+//     }
+// }
+// for (k = 1; k < n; k = k * 2)
+// {
+//     b++; // time complexity is O(log n)
+// }
+// so we add it time complexity becomes O(n^2 + log n)
+// most dominating in it is O(n^2)
+// Final time complexity is O(n^2)s
+
+//===========================================================
+// Time Complexity Hierarchy
+// 1 < logn < n < nlogn < n^2 < n^3 < a^n < factorial(n)
