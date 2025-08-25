@@ -21,3 +21,26 @@
 //  //}
 // here what is happening
 // yaha function khud ko call kar raha hai
+
+//==================================================
+
+// factorial
+// factorial(n) = n * factorial(n-1)
+// factorial(5) = 5 * factorial(4)
+// factorial(5) = 5*4*3*2*1
+
+// we use recursion , when we want to solve a big problem
+// we solve it using some work and that work keeps getting smaller.
+// that same work is repeating and but it's size keeps getting smaller as we go deeper into the problem.
+
+//==============================================================
+
+int fact(int n)
+{
+    int f = 1; // starting point from where you begin to multiply
+    for (int i = 1; i <= n; i++)
+    {
+        f = f * i;
+    }
+    return f;
+}
