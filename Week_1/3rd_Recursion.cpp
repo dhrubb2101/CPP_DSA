@@ -94,3 +94,24 @@ int fact(int n)
 // Similarly fact(3) returns 6 so since fact(3) got called in fact(4)
 // value of fact(3) gets returned in f(4)
 // and f(4) = 4 * 6 = 24
+
+// so remember always assume that whatever function in recursion is calling itself consider in the beginning it is complete and ready to execute
+// then always lay down the base condition first or else it will lead to an infinite recursion
+// also we pass the parameter in the function and mention the return type like int before it
+// when you again call the function inside the function , make sure the size of the paramter is smaller otherwise the recursion will go infinitely
+// because if the parameter size is not smaller, the function will keep calling itself with the same parameter and never reach the base condition
+
+// format- int fun(parameter){
+//  base condition
+//   if(parameter == 0){
+//       return 1;
+//   }
+//   // recursive call
+//   return parameter * fun(parameter - 1);
+//}
+
+// application of recursion
+// recursion jb kaam mei aata hai jb koi aisa kaam karanaa ho jaha pr stack ban rha ho
+// like fact(4) we required fact(3), fact(3) we required fact(2), fact(2) we required fact(1)
+// consider it as a stack of function calls with
+//  fact(4) at the bottom, then fact(3), then fact(2), and finally fact(1) at the top
