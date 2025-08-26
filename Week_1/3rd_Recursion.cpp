@@ -58,3 +58,39 @@ int fact(int n)
 //  }
 
 // here we are looking to calculate the factorial and as you can see, here we made the problem a little smaller than before, by breaking it down into smaller subproblems.
+
+// int fact(n){
+//  return n * fact(n - 1)
+//  }
+
+// for every recursion problem
+// think the function which is going to call themselves is already completed or made
+// like here factorial naam ka function pehle se bana hua hai voh aapko factorial nikal ke de dega
+// this will make recursion
+
+// for ex n = 4
+// as fact(4) is called in return statement
+// fact(4) = 4 * fact(3) //as fact(3) is called in return statement
+// fact(3) = 3 * fact(2) //as fact(2) is called in return statement
+// fact(2) = 2 * fact(1) //as fact(1) is called in return statement
+// fact(1) = 1 * fact(0) //as fact(0) is called in return statement
+// fact(0) = 1
+
+// base condition(a small program whose output is known) in recursion
+//  here fact(1) = 1 is the base condition
+//  it stops the recursion from going further
+// for ex here we will use
+//  //if(n==1){
+//  return 1
+//  }
+// and we call this base condition before the return statement as if we do it after return statement this will lead to an infinite recursion
+
+// also fact(1) return 1 so since fact(1) got called in fact(2)
+// value of fact(1) gets returned in f(2)
+// and f(2) = 2 * 1 = 2
+// Similarly fact(2) returns 2 so since fact(2) got called in fact(3)
+// value of fact(2) gets returned in f(3)
+// and f(3) = 3 * 2 = 6
+// Similarly fact(3) returns 6 so since fact(3) got called in fact(4)
+// value of fact(3) gets returned in f(4)
+// and f(4) = 4 * 6 = 24
