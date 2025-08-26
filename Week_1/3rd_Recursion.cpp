@@ -44,3 +44,17 @@ int fact(int n)
     }
     return f;
 }
+
+// what it does line 45 returns the f to main function which calls the fact function
+//  and the value of f is the factorial of n and returns it
+
+//======================================================================
+
+// how to write the same program using recursion
+
+// example of using recursion
+//  fact(4){
+//      4 * fact(3)
+//  }
+
+// here we are looking to calculate the factorial and as you can see, here we made the problem a little smaller than before, by breaking it down into smaller subproblems.
