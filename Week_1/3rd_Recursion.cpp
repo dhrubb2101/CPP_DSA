@@ -133,4 +133,42 @@ int fact(int n)
 //    return n * fact(n - 1);}
 // function call happens n times and each function call is multiplying here
 // and multiplying takes constant time and it is happening n times
+// why each multiplication takes constant time?
+// because fact(1) ultimately returns 1
+// fact(2) = 2 * fact(1) = 2 * 1 = 2 (which is constant time)
+// similarly for others
+// and we multiply no. of function calls (here n) to individual function call time (which is contant time = 1)
+// we do this because in a function it calls itself therefore we multiply ( O(n) * 1 = O(n) )
 // so time complexity is O(n)
+
+//==========================================================================================
+
+// now in interview question arises whether recursion is better or iteration,becuase both have time complexity (n)
+//  both have their pros and cons
+//  recursion is more elegant and easier to read
+//  but it can lead to stack overflow if the recursion depth is too high
+//  iteration is more efficient in terms of space complexity
+//  but it can be harder to read and understand
+//  so the choice between recursion and iteration depends on the specific problem and constraints
+
+// recursion na nested loop ki tarah hai
+// citing above example no. of function calls jo n hai becomes the outer loop
+// and andar waala loop is the function calling itself within the function ( the difference is uski complexity is constant time)
+//  so overall complexity is O(n) * O(1) = O(n)
+
+// iterative code is for ex nested loop
+// The answer which is better recursion or iterative code cuz time complexity is same
+// iterative code is better as in recursion code becuase in recursion internally we make a stack which consumes more memory and
+// when we construct that memory , the OS needs to idenify, allocate and release the memory hence more time
+//  hence recursion takes more time . hence more time complexity than iteration
+
+// here you see in memory, fact(4) first get allocated new memory then fact(3), fact(2), fact(1) and then each of the function works gets finished the allocated memory needs to be released
+// hence all of this takes time
+// in recursion
+
+//=============================================================================================================================================
+
+// we use recursion where there is a scope of repeating a work again and again but the size of the program gets smaller each time.
+// we can use recursion
+//  in problems like factorial, fibonacci series, tower of hanoi, etc.
+// we use recursion also where loops are used, where when you go to use loops it would increase complexity and better option is to use recursion.
