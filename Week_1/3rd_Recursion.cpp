@@ -125,4 +125,12 @@ int fact(int n)
 
 // Calculating Time Complexity for Recursion
 
-// fact(n) = n * fact(n - 1)
+// first example
+// just see and guess the time complexity
+//  int fact(n){
+//      if(n == 1)
+//      return 1;
+//    return n * fact(n - 1);}
+// function call happens n times and each function call is multiplying here
+// and multiplying takes constant time and it is happening n times
+// so time complexity is O(n)
