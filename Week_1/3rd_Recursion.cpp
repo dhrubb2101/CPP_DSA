@@ -172,3 +172,19 @@ int fact(int n)
 // we can use recursion
 //  in problems like factorial, fibonacci series, tower of hanoi, etc.
 // we use recursion also where loops are used, where when you go to use loops it would increase complexity and better option is to use recursion.
+
+//========================================================================================================
+// leetcode challenge
+
+// Problem - 509 - Fibonacci Number
+
+// n = 0 -> return 0
+// n = 1 -> return 1
+
+// F(n) = F(n - 1) + F(n - 2)
+// F(5) = F(4) + F(3)
+// F(4) = F(3) + F(2)
+// F(3) = F(2) + F(1)
+// F(2) = F(1) + F(0)
+// F(1) = 1
+// F(0) = 0
