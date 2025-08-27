@@ -111,7 +111,18 @@ int fact(int n)
 //}
 
 // application of recursion
+// Architecture of recursion
+
 // recursion jb kaam mei aata hai jb koi aisa kaam karanaa ho jaha pr stack ban rha ho
 // like fact(4) we required fact(3), fact(3) we required fact(2), fact(2) we required fact(1)
 // consider it as a stack of function calls with
 //  fact(4) at the bottom, then fact(3), then fact(2), and finally fact(1) at the top
+// so when the function of f(1) finishes it's value returns to fact(2)
+// then fact(2) finishes and returns its value to fact(3)
+// this continues until all functions have returned their values back to the original caller
+
+//============================================================================================
+
+// Calculating Time Complexity for Recursion
+
+// fact(n) = n * fact(n - 1)
