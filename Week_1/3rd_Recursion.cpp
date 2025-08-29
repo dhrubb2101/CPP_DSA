@@ -188,3 +188,29 @@ int fact(int n)
 // F(2) = F(1) + F(0)
 // F(1) = 1
 // F(0) = 0
+
+// int fib(int n){
+//     if(n==0){
+//         return 0;
+//     }
+//     if(n==1){
+//         return 1
+//     }
+//     return fib(n - 1) + fib(n - 2)
+// }
+
+//================================================
+
+// time complexity for this numerical
+
+// fib(4) -> fib(3) + fib(2) -> fib(2) + fib(1) + fib(1) + fib(0)
+// First function gets split into two then two gets split into four and so on
+//  so time complexity is O(2^n)
+// as for each level it goes 2^0, 2^1, 2^2, ... 2^(n-1)
+
+//================================================================
+
+// Type conversion
+// like for ex n == 1
+// n = 1.0
+// then c++ automatically truncates to the integer part of n
