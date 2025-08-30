@@ -214,3 +214,26 @@ int fact(int n)
 // like for ex n == 1
 // n = 1.0
 // then c++ automatically truncates to the integer part of n
+
+//=================================================================
+
+// leetcode challenge
+
+// Problem : 3304. Find the K-th Character in String Game I
+// getword(int k){
+// if (k <= 1){
+//     return;
+// }
+// else
+// {
+//     int i = 0;
+//     string temp;
+//     while (word[i] != '\0')
+//     {
+//         // process each character
+//         temp.append(1, word[i] + 1);
+//         i++;
+//         k--;
+//     }
+//     word.append(temp);
+// }
