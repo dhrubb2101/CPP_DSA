@@ -110,6 +110,10 @@ int fact(int n)
 //   return parameter * fun(parameter - 1);
 //}
 
+// ChatGPT said:
+// Because once a return statement is executed, the function immediately exits and no further code in that function runs.
+// // So if you write something after return, that code will never be executed → it becomes unreachable code.
+
 // application of recursion
 // Architecture of recursion
 
