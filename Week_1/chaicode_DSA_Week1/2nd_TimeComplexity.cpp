@@ -87,7 +87,7 @@
 // for ex 2^n,3^n, e^n, a^n
 // it grows exponentially
 //
-//================================================
+//================================================,
 // Assume each operation takes 1 second
 // int main(){
 //     int x,y,z; //-> 3seconds
