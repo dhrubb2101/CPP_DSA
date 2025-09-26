@@ -278,7 +278,7 @@
 //     a++; //
 // }
 // i = 1, 3^1, 3^2, 3^3, ......, (3^k=n)
-// k = log3(n) and constant can be removed
+// k = log3(n) and constant can be removed=
 // so time complexity is O(log n)
 
 //============================================================
