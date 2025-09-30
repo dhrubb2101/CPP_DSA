@@ -242,3 +242,5 @@ int fact(int n)
 //     word.append(temp);
 // }
 //
+// here time complexity is n^2 as there is loop inside a function which is called recursively
+// so time complexity is O(n^2)

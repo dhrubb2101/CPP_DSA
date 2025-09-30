@@ -298,7 +298,7 @@
 //  log(n) - k*log(2) = 0
 //  k = log(n)
 
-//===================================================
+//=====================================================
 // Another Challenge (nlogn)
 // for (i = 0; i < n; i++) // time complexity is n/2
 // {
@@ -310,7 +310,7 @@
 
 //===================================================
 
-// Another challenge
+// Another challenge//
 
 // for (int i = 0; i < n; i = i + 3)
 // { // time complexity is n/3
@@ -363,4 +363,5 @@
 //===========================================================
 // Time Complexity Hierarchy
 // 1 < logn < n < nlogn < n^2 < n^3 < a^n < factorial(n)
-// jhj
+//
+// so what
