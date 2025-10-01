@@ -8,3 +8,7 @@
 
 // now to create an array
 // we first need to know datatype of elements that we want to add
+
+// Datatype vriable_name[size];
+//  int arr[10]; // array of 10 integers
+// it will create five blocks of memory each of size 4 bytes
