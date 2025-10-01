@@ -7,4 +7,4 @@
 // we can't delete anything in an array we can override it or make it inacccessible
 
 // now to create an array
-// we first need to know datatype of elements
+// we first need to know datatype of elements that we want to add
