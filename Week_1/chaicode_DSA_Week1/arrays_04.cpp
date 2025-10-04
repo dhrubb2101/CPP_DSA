@@ -94,3 +94,16 @@ int main()
     }
     cout << "Maximum element is: " << max << endl;
 }
+
+//====================================
+// if we want to use vector in place of array
+// it is a dynamic array
+
+// #include <vector>
+// using namespace std;
+
+// vector<int> v; // declaration of vector of integers
+// this will create one dimension array of integers
+
+// v[0] = 10; // we can use it like this also
+// v.push_back(10); // this will add 10 at the end of vector
