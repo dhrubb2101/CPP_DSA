@@ -35,10 +35,62 @@
 // arr[1] = 2;
 // arr[2] = 3;
 
-// ⚡ Key point:
+//  Key point:
 // "Initialization" happens only at declaration time.
 // "Assignment" is done after declaration.
 
-// So what you said is correct, just flip the numbering in your explanation:
 // Initialization → when array is created and given values immediately.
 // Assignment → when array is created first, then values are assigned later.
+
+//====================================
+
+// For Example -
+// int a[5] = {10,20,25,30,35}
+// int b[3] = {1,2,3,4} //error as size is 3 but we are giving 4 values
+// int c[4] = {1,2} //{1,2,0,0}
+
+//====================================
+
+// int a[] = { //if you write it like this will throw an error as size is not mentioned
+// int a[]; //this will throw an error as size is not mentioned
+// a[] = {1,2,3,4} //this will work as size is automatically taken as 4 by compiler
+
+//====================================
+
+// assignment in array
+
+// int a[5]; //declaration of array of size 5
+// a[0] = 10; //assignment of value 10 at index 0
+// a[1] = 20;
+// a[2] = 25;
+// when assigneing we can skip a value in between but can't do that in initiialization
+
+//====================================
+
+// initialization of array
+// using loop
+
+// for(int i = 0; i < 5; i++){
+//  cin >> a[i];
+// }
+
+//====================================
+
+// WAP to find the maximum element in an array of n integers.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[] = {10, 20, 5, 23, 42};
+    int max = a[0]; // assuming first element is the maximum one
+    for (int i = 1; i < 5; i++)
+    {
+        if (a[i] > max)
+        {
+            max = a[i];
+        }
+    }
+    cout << "Maximum element is: " << max << endl;
+}
