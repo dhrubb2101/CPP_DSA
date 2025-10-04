@@ -113,3 +113,37 @@ int main()
 // if we want to copy one array to another array
 // we can do this in vector easily by using
 //  vector<int> v2 = v1; // this will copy all the elements of v
+
+//====================================
+
+// leetcode problem - 26 - Remove Duplicates from Sorted Array
+
+int removeDuplicate(int a[], int n)
+{
+    int k = 1;
+    int temp[n];
+    temp[0] = a[0];
+    for (int i = 1; i < n; i++)
+    {
+        if (a[i] == a[i - 1])
+        {
+            continue;
+        }
+        else
+        {
+            temp[k] = a[i];
+            k++;
+        }
+    }
+    for (int i = 0; i < k; i++)
+    {
+        a[i] = temp[i];
+    }
+    return k;
+}
+// here inplace means we have to give output in the same array
+// we didn't start from index 0 because first element would always be unique and we copy it to  temp array at index 0
+// we are comparing consecutive elements as array is sorted
+// if they are equal we will continue to next iteration
+
+//====================================
