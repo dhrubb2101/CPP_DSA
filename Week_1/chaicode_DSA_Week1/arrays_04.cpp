@@ -107,3 +107,9 @@ int main()
 
 // v[0] = 10; // we can use it like this also
 // v.push_back(10); // this will add 10 at the end of vector
+
+// cout << v[2]; // this will print the 3rd element of vector
+
+// if we want to copy one array to another array
+// we can do this in vector easily by using
+//  vector<int> v2 = v1; // this will copy all the elements of v
