@@ -147,3 +147,29 @@ int removeDuplicate(int a[], int n)
 // if they are equal we will continue to next iteration
 
 //====================================
+
+// we do the same question using vector
+
+// class Solution {
+// public:
+//     int removeDuplicates(vector<int>& nums) {
+//     int k = 1;
+//     vector<int> a;
+//     a.push_back(nums[0]);
+//     for (int i = 1; i < nums.size(); i++)
+//     {
+//         if (nums[i] == nums[i - 1])
+//         {
+//             continue;
+//         }
+//         else
+//         {
+//             a.push_back(nums[i]);
+//             k++;
+//         }
+//     }
+//    nums.assign(a.begin(),a.end());
+//     return k;
+
+//     }
+// };
