@@ -178,3 +178,7 @@ int removeDuplicate(int a[], int n)
 
 // TIme complexity will be O(n)
 // why - because we are traversing the array only once
+
+//====================================
+
+// problem - 66 - Plus One
